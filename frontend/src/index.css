@@ -24,3 +24,18 @@ code {
 .btnlinks a:hover{
   text-decoration: underline;
 }
+#supportHero{
+  background-color: rgba(66, 66, 66, 0.05);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  /* opacity: 0.1; */
+}
+#supportRow{
+  display: flex;
+  justify-content: space-between;
+}
+#searchBox{
+  width: 95%;
+  height: 50px;
+}
