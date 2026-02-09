@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ParityBit Trace | Breach Intelligence & OSINT Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="brand">
+    <h1>ParityBit Trace</h1>
+    <span>Breach Intelligence Platform</span>
+  </div>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#usecases">Use Cases</a>
+    <a href="#how">How It Works</a>
+    <button>Request Demo</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Expose Digital Identities.<br>Before They Expose You.</h2>
+  <p>
+    ParityBit Trace is an advanced breach intelligence and OSINT platform that
+    maps digital identities across leaked credentials, public data, and online
+    footprints — in seconds.
+  </p>
+
+  <div class="hero-actions">
+    <button class="primary" onclick="openDemo()">Request Demo</button>
+    <button class="secondary">View Platform</button>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <span>Used by security teams for</span>
+  <div class="trust-items">
+    <div>Threat Intelligence</div>
+    <div>Fraud Detection</div>
+    <div>Incident Response</div>
+    <div>Risk Assessment</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <h3>Powerful Intelligence. One Query.</h3>
+  <p class="section-desc">
+    Enter an email, phone number, username, or IP address.
+    ParityBit Trace uncovers the entire digital footprint.
+  </p>
+
+  <div class="feature-grid">
+    <div class="feature">
+      <h4>Breach Correlation</h4>
+      <p>
+        Instantly identify leaked credentials, passwords, and breach sources
+        tied to a digital identity.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h4>Identity Graph Mapping</h4>
+      <p>
+        Visualize relationships between emails, phones, IPs, locations,
+        accounts, and credentials.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h4>Digital Footprint Discovery</h4>
+      <p>
+        Detect public profiles, reused usernames, images, and online presence
+        across platforms.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h4>Recursive Intelligence Expansion</h4>
+      <p>
+        Every discovered data point becomes a new investigation path —
+        automatically.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h4>Risk Scoring</h4>
+      <p>
+        Instantly understand exposure severity with clear, actionable
+        intelligence ratings.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h4>Secure & Ethical</h4>
+      <p>
+        Designed for lawful investigations, corporate security, and compliance
+        workflows.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section dark">
+  <h3>How ParityBit Trace Works</h3>
+
+  <div class="steps">
+    <div>
+      <span>01</span>
+      <h4>Input Identifier</h4>
+      <p>Email, phone, username, or IP address</p>
+    </div>
+    <div>
+      <span>02</span>
+      <h4>Automated Correlation</h4>
+      <p>Breach data, OSINT, and metadata are analyzed</p>
+    </div>
+    <div>
+      <span>03</span>
+      <h4>Visual Intelligence</h4>
+      <p>Identity relationships mapped in real time</p>
+    </div>
+    <div>
+      <span>04</span>
+      <h4>Actionable Insights</h4>
+      <p>Risk, exposure, and next steps revealed</p>
+    </div>
+  </div>
+</section>
+
+<!-- USE CASES -->
+<section id="usecases" class="section">
+  <h3>Built For Modern Security Teams</h3>
+
+  <div class="usecases">
+    <div>Security Operations (SOC)</div>
+    <div>Threat Intelligence Teams</div>
+    <div>Fraud & Risk Analysts</div>
+    <div>Incident Response</div>
+    <div>Corporate Security</div>
+    <div>Compliance & Auditing</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h3>Know What’s Exposed. Before It’s Exploited.</h3>
+  <p>
+    Discover how ParityBit Trace helps organizations uncover digital risk
+    at machine speed.
+  </p>
+  <button class="primary">Request a Private Demo</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>© 2026 ParityBit Trace. All rights reserved.</span>
+</footer>
+<!-- CHATBOT -->
+<div class="chatbot-toggle" onclick="toggleChatbot()">💬</div>
+
+<div class="chatbot">
+  <div class="chatbot-header">
+    <span>ParityBit Assistant</span>
+    <button onclick="toggleChatbot()">✕</button>
+  </div>
+
+  <div class="chatbot-messages" id="chatMessages">
+    <div class="bot-msg">
+      👋 Hi! I’m the ParityBit Trace assistant.<br>
+      How can I help you today?
+    </div>
+  </div>
+
+  <div class="chatbot-input">
+    <input
+      type="text"
+      id="chatInput"
+      placeholder="Ask about breaches, OSINT, demos..."
+      onkeypress="handleEnter(event)"
+    />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+<!-- DEMO MODAL -->
+<div class="demo-modal" id="demoModal">
+  <div class="demo-box">
+    <h3>Request a Private Demo</h3>
+    <p>See how ParityBit Trace uncovers digital risk in seconds.</p>
+
+    <input type="text" id="demoName" placeholder="Full Name" />
+    <input type="email" id="demoEmail" placeholder="Work Email" />
+    <input type="text" id="demoCompany" placeholder="Company Name" />
+    <textarea id="demoMsg" placeholder="What would you like to explore?"></textarea>
+
+    <div class="demo-actions">
+      <button class="secondary" onclick="closeDemo()">Cancel</button>
+      <button class="primary" onclick="submitDemo()">Submit Request</button>
+    </div>
+  </div>
+</div>
+<script>
+  const chatbot = document.querySelector(".chatbot");
+  const messages = document.getElementById("chatMessages");
+  const input = document.getElementById("chatInput");
+
+  function toggleChatbot() {
+    chatbot.style.display =
+      chatbot.style.display === "flex" ? "none" : "flex";
+  }
+
+  function handleEnter(e) {
+    if (e.key === "Enter") sendMessage();
+  }
+
+  function sendMessage() {
+    const text = input.value.trim();
+    if (!text) return;
+
+    addMessage(text, "user");
+    input.value = "";
+
+    setTimeout(() => {
+      botReply(text);
+    }, 600);
+  }
+
+  function addMessage(text, sender) {
+    const msg = document.createElement("div");
+    msg.className = sender === "user" ? "user-msg" : "bot-msg";
+    msg.innerText = text;
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function botReply(userText) {
+    let reply =
+      "I can help with demos, breach intelligence features, or platform details.";
+
+    if (userText.toLowerCase().includes("demo")) {
+      reply = "You can request a private demo using the button above 🚀";
+    } else if (userText.toLowerCase().includes("breach")) {
+      reply =
+        "ParityBit Trace correlates leaked credentials, breach sources, and identity data in seconds.";
+    } else if (userText.toLowerCase().includes("pricing")) {
+      reply =
+        "Pricing is customized based on usage. Our team will guide you during the demo.";
+    }
+
+    addMessage(reply, "bot");
+  }
+  const demoModal = document.getElementById("demoModal");
+
+  function openDemo() {
+    demoModal.style.display = "flex";
+  }
+
+  function closeDemo() {
+    demoModal.style.display = "none";
+  }
+
+  function submitDemo() {
+    const name = demoName.value.trim();
+    const email = demoEmail.value.trim();
+    const company = demoCompany.value.trim();
+
+    if (!name || !email || !company) {
+      alert("Please fill all required fields");
+      return;
+    }
+
+    demoModal.querySelector(".demo-box").innerHTML = `
+      <h3>Request Submitted ✅</h3>
+      <p>Our security team will reach out shortly.</p>
+      <button class="primary" onclick="closeDemo()">Close</button>
+    `;
+  }
+</script>
+</body>
+</html>
