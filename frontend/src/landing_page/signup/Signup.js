@@ -23,7 +23,7 @@ function Signup() {
       return;
     }
     try {
-      await axios.post("http://localhost:3002/signup", {
+      await axios.post("https://tradex-application.onrender.com/signup", {
         name: formData.name,
         email: formData.email,
         password: formData.password
