@@ -22,7 +22,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:3002/login", {
+      const res = await axios.post("https://tradex-application.onrender.com/login", {
         email: formData.email,
         password: formData.password
       });
