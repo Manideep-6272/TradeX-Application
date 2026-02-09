@@ -32,7 +32,7 @@ function Login() {
       // Optional: store user (JWT comes later)
       localStorage.setItem("user", JSON.stringify(res.data.user));
 
-      window.location.href = "http://localhost:3001";
+      window.location.href = "https://tradex-application-1.onrender.com/";
 
     } catch (error) {
       alert(error.response?.data?.message || "Login failed");
